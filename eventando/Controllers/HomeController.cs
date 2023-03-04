@@ -1,6 +1,7 @@
 ﻿using eventando.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Text;
 
 namespace eventando.Controllers
 {
@@ -54,10 +55,25 @@ namespace eventando.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult IncluirProduto01()
+        {
+            return View();
+        }
+
+
         [HttpPost]
         public IActionResult IncluirProduto01(Produto produto)
         {
-            return View();
+            StreamWriter writer = new StreamWriter("wwwroot/pdf/documento.txt", false, Encoding.UTF8);
+
+            writer.WriteLine("Código: " + produto.Codigo);
+            writer.WriteLine("Descrição: " + produto.Descricao);
+            writer.WriteLine("Preço: " + produto.Preco.ToString("c"));
+            writer.WriteLine("Data Fabricação: " + produto.DataFabricacao);
+            writer.Close();
+
+            return File("~/pdf/documento.txt", "text/plain");
         }
 
         public IActionResult ExibirProduto()

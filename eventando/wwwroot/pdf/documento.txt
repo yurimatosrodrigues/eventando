@@ -1,0 +1,4 @@
+﻿Código: 1
+Descrição: teste
+Preço: R$ 50,00
+Data Fabricação: 08/03/2023 00:00:00
