@@ -1,0 +1,13 @@
+﻿body {
+    background-color: #F5DEB3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.borda {
+    margin: 10px;
+    border: solid 1px #ff0000;
+}
+
+.cor-fonte {
+    color: #0026ff;
+}

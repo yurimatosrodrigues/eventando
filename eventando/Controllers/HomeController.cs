@@ -87,5 +87,15 @@ namespace eventando.Controllers
             };
             return View(produto);
         }
+
+        public IActionResult ExemploCSS()
+        {
+            return View();
+        }
+
+        public IActionResult IncluirProdutoLayout()
+        {
+            return View();
+        }
     }
 }
