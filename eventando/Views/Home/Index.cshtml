@@ -1,13 +1,16 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<h1>Exemplos de Action</h1>
-<ul>
-    <li>@Html.ActionLink("Visualizar PDF", "Arquivo", "Home")</li>
-    <li>@Html.ActionLink("Visualizar Resultados ViewData/View Bag", "Resultado")</li>
-    <li><a asp-controller="Home" asp-action="IncluirProduto01">Formulário de Produtos</a></li> 
-    <li><a asp-controller="Home" asp-action="Calculadora">Calculadora</a></li>
-    <li><a asp-controller="Home" asp-action="ExibirProduto">Exibir Produto</a></li>
-    <li>@Html.ActionLink("Exemplo CSS", "ExemploCSS")</li>
-    <li>@Html.ActionLink("Formúlário de Produtos com Layout", "IncluirProdutoLayout")</li>
-</ul>
+
+<div style="margin-top: 60px;">
+    <h1>Exemplos de Action</h1>
+    <ul>
+        <li>@Html.ActionLink("Visualizar PDF", "Arquivo", "Home")</li>
+        <li>@Html.ActionLink("Visualizar Resultados ViewData/View Bag", "Resultado")</li>
+        <li><a asp-controller="Home" asp-action="IncluirProduto01">Formulário de Produtos</a></li>
+        <li><a asp-controller="Home" asp-action="Calculadora">Calculadora</a></li>
+        <li><a asp-controller="Home" asp-action="ExibirProduto">Exibir Produto</a></li>
+        <li>@Html.ActionLink("Exemplo CSS", "ExemploCSS")</li>
+        <li>@Html.ActionLink("Formúlário de Produtos com Layout", "IncluirProdutoLayout")</li>
+    </ul>
+</div>
